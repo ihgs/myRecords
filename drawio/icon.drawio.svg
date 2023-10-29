@@ -1,0 +1,29 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="201px" height="198px" viewBox="-0.5 -0.5 201 198" content="&lt;mxfile&gt;&lt;diagram id=&quot;vk_rfThbmNlp8EAyw9Kd&quot; name=&quot;Page-1&quot;&gt;7ZlJj5swFMc/TY6DvOCFY5vpcmjVSnPomYBD0BAcOc4k009fE0yCWRqisSaadogUwbN54P/veXlmhufrwxcVb1bfZSqKGQLpYYbvZwhRzs1/ZXiuDSgMa0Om8rQ2wbPhIf8trBFY6y5PxdapqKUsdL5xjYksS5FoxxYrJfdutaUs3Kdu4kz0DA9JXPStv/JUr2orR+xs/yrybNU8GdKoLlnHTWXbku0qTuW+ZcKfZniupNT12fowF0WlXaNLfd/nkdLTiylR6ik3oPqGp7jY2bbZ99LPTWOV3JWpqOrDGf64X+VaPGzipCrdG7rGttLrwhYv86KYy0Kq4714uRQ0SYx9q5V8FK2SlEULAExJ/41tI56E0uLQMtkWfBFyLbR6NlWaUmrVtOEEG3X3Zzgn26oNJrTG2AZEdvJ91sycWNlGNAeXNRRl+qGKO3NVylK4mtXaNIGEh9QCx+NvaonUCdm+Vi0tyIAUjU2JItb5kxvoQ/LYJ/yUuXmTMwreQRES18VW7lQi7F3twOw4Ql2mXUc6VpnQPUdHWqdmTwMI3wGOA6S+AHYdeQQ4YRT7fwFyXwC7jjwCxO8ARwEi4Algz5FHgOE7wHGAyBfAriOPAMk7wHGAvhYxPUf+AKIJi5jMLOU3o+L31tun/CleNB7AMJamuSByZwxIA2hTvRY5NkCO+ViIR5cl0CqPy6y6upTJKKlNDMnSXN5VDe/nNqT6DQU6PR6mJFNxmhudW2WL42+wE1yf+ODAjOmUQxJGiGCGotDRn8AAYMg4MYUcAY5pjwUkAeVm+MYRZpxCxFmfjanDQs55hKkJYICb7P1FrOhlViY33lSnyXORmwxU4cvQFnWu+m1xMsTJY3bMYH/stHEjmuGq3lNgLmgygBkAAsSysksH5PJ4DI9z8P7j3BdiHFAKQvMSjBIOMHYI35kOxiggBBOCODCM+4R5wCmhMIKEoZAZxAO9j5hA4iYOYIUX8vDlgMMpS7qiyDfbCX0x3m7qbZxlfqh2IhxGdi7qYQjvq58nDHcoYDxqHcgd6WjAYbsY9zkM7T94GPXwlKXXrYS+fiuHd4TFr6jkhPnjDSnZmQxeU8lwQkxOn4nHZRrQtD1tR772FzkKiCsmeUUxJyzN35KY0Q2lZJelPG93A89qeolE3I1ERibJ52HNFvK3rl7EbqbdPzW3oCaru8Hc0uT4/8hweFqy32A4JBP2DK7q0Bfj0OnLAxsOPSnH+zJyt1ai/ic/BIZ0a8aAK4Qzl+cvsvXezPmzNv70Bw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-f5f5f5-1-b3b3b3-1-s-0">
+            <stop offset="0%" style="stop-color: rgb(245, 245, 245); stop-opacity: 1;"/>
+            <stop offset="100%" style="stop-color: rgb(179, 179, 179); stop-opacity: 1;"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <rect x="40" y="30" width="120" height="140" rx="18" ry="18" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/>
+        <path d="M 60 55 L 140 55" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 75 L 140 75" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 95 L 140 95" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 115 L 140 115" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 135 L 140 135" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 60 155 L 140 155" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 92.21 77.21 L 107.89 85.09 L 92.21 92.96 Z" fill="url(#mx-gradient-f5f5f5-1-b3b3b3-1-s-0)" stroke="#666666" stroke-miterlimit="10" transform="rotate(-220,100.05,85.09)" pointer-events="none"/>
+        <path d="M 122.66 27 C 122.66 23.14 126.88 20 132.09 20 C 134.59 20 136.99 20.74 138.76 22.05 C 140.53 23.37 141.53 25.15 141.53 27 L 141.53 88.21 C 141.53 92.08 137.3 95.21 132.09 95.21 C 126.88 95.21 122.66 92.08 122.66 88.21 Z" fill="#0050ef" stroke="#001dbc" stroke-miterlimit="10" transform="rotate(50,132.09,57.61)" pointer-events="none"/>
+        <path d="M 141.53 27 C 141.53 30.87 137.3 34 132.09 34 C 126.88 34 122.66 30.87 122.66 27" fill="none" stroke="#001dbc" stroke-miterlimit="10" transform="rotate(50,132.09,57.61)" pointer-events="none"/>
+        <ellipse cx="91.21" cy="48" rx="5" ry="5" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <ellipse cx="67" cy="48" rx="5" ry="5" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <ellipse cx="79" cy="48" rx="5" ry="5" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <path d="M 62.5 63 L 72.5 68 L 62.5 73 Z" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" transform="rotate(-90,67.5,68)" pointer-events="none"/>
+        <path d="M 75 63 L 85 68 L 75 73 Z" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" transform="rotate(-90,80,68)" pointer-events="none"/>
+        <rect x="63.5" y="85" width="10" height="8" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <rect x="77" y="85" width="10" height="8" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <ellipse cx="103" cy="48" rx="5" ry="5" fill="none" stroke="#4d4d4d" pointer-events="none"/>
+        <path d="M 88 63 L 98 68 L 88 73 Z" fill="none" stroke="#4d4d4d" stroke-miterlimit="10" transform="rotate(-90,93,68)" pointer-events="none"/>
+    </g>
+</svg>
