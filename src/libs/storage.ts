@@ -8,7 +8,9 @@ const recordData = (recordKey: string, data: any) => {
     if(at_date){
         at_time = parse(`${at_date} 12:00:00`, 'yyyy-MM-dd HH:mm:ss', new Date()).getTime()
     }
-    localStorage.setItem(`${appkey}.${recordKey}.items`, JSON.stringify({at_time, data}))
+    const current = listData(recordKey);
+    current.unshift({at_time, data})
+    localStorage.setItem(`${appkey}.${recordKey}.items`, JSON.stringify(current))
 }
 
 const listData = (recordKey: string) => {
