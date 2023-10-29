@@ -9,6 +9,7 @@ export default function NewRecord() {
     const {
         register,
         handleSubmit,
+        reset,
         // watch,
         // formState: { errors },
     } = useForm<any>({
@@ -19,6 +20,7 @@ export default function NewRecord() {
 
     const onSubmit: SubmitHandler<any> = (data) => {
         recordData('step', data)
+        reset()
     }
     return (
         <>
@@ -27,9 +29,9 @@ export default function NewRecord() {
                     ステップ
                 </Typography>
                 <TextField type="date" label="登録日" {...register('at_date')} />
-                <TextField type="number" label="時間" {...register('time')} required />
-                <TextField type="number" label="距離" {...register('distance')} required/>
-                <TextField type="number" label="カロリー" {...register('calorie')} required/>
+                <TextField type="number" label="時間(分)" {...register('time')} required />
+                <TextField type="number" inputProps={{step: 0.001}} label="距離(km)" {...register('distance')} required/>
+                <TextField type="number" inputProps={{step: 0.1}} label="カロリー(kcal)" {...register('calorie')} required/>
                 <Button type="submit" >Record</Button>
             </Stack>
             <Footer />

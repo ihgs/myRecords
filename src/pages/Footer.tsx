@@ -17,6 +17,7 @@ export default function Footer() {
                     showLabels
                     value={value}
                     onChange={handleNavigationChange}
+                    sx={{marginBottom:2}}
                 >
                     <BottomNavigationAction label="New" icon={<Add />} value="/" />
                     <BottomNavigationAction label="List" icon={<List />} value="/list" />
