@@ -7,7 +7,6 @@ export default function Footer() {
     const [value, setValue] = useState<string>("")
 
     const handleNavigationChange = (_:any, newValue:any) => {
-        console.log(newValue)
         setValue(newValue)
         navigate(newValue)
     }

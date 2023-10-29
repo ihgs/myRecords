@@ -1,17 +1,20 @@
-import { RouterProvider, createBrowserRouter,  } from 'react-router-dom'
+import { RouterProvider, createHashRouter,  } from 'react-router-dom'
 import './App.css'
 import NewRecord from './pages/NewRecord'
 import ListData, { listDataLoader } from './pages/ListData'
 
+const base = import.meta.env.VITE_GITHUB_PAGES ? "/myRecords/" : "/"
+console.log(base)
 function App() {
+  
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
-      path: "/",
+      path: `/`,
       element: <NewRecord />,
     },
     {
-      path: "list",
+      path: `/list`,
       loader: listDataLoader,
       element: <ListData />
     }

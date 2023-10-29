@@ -3,16 +3,17 @@ import { Button, Stack, TextField, Typography } from '@mui/material'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { recordData } from '../libs/storage'
 import Footer from './Footer'
-export default function NewRecord() {
+import { format } from 'date-fns'
 
+export default function NewRecord() {
     const {
         register,
         handleSubmit,
-        watch,
-        formState: { errors },
+        // watch,
+        // formState: { errors },
     } = useForm<any>({
         defaultValues: {
-            at_date: '2023-10-11'
+            at_date: format(new Date(), 'yyyy-MM-dd')
         }
     })
 
