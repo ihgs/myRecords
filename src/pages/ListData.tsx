@@ -13,7 +13,16 @@ export default function ListData () {
         <>
             <Typography >Records</Typography>
             {data.map((datum,index)=> {
-                return <div key={index}>{datum.data.at_date}: {datum.data.distance}</div>
+                return (
+                    <div key={index}>
+                        {datum.data.at_date}
+                            <ul>
+                                <li>{datum.data.time} 分</li>
+                                <li>{datum.data.distance} km</li>
+                                <li>{datum.data.calorie} kcal</li>
+                            </ul>
+                    </div>
+                )
             })}
             <Footer />
         </>
