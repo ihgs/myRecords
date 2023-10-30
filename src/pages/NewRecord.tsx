@@ -25,10 +25,10 @@ export default function NewRecord() {
     return (
         <>
             <Stack component="form" spacing={2} onSubmit={handleSubmit(onSubmit)}>
-                <Typography variant='h5' >
+                <Typography>
                     ステップ
                 </Typography>
-                <TextField type="date" label="登録日" {...register('at_date')} />
+                <TextField type="date" label="日付" {...register('at_date')} />
                 <TextField type="number" label="時間(分)" {...register('time')} required />
                 <TextField type="number" inputProps={{step: 0.001}} label="距離(km)" {...register('distance')} required/>
                 <TextField type="number" inputProps={{step: 0.1}} label="カロリー(kcal)" {...register('calorie')} required/>
