@@ -24,7 +24,7 @@ export default function NewRecord() {
     }
     return (
         <>
-            <Stack component="form" spacing={2} onSubmit={handleSubmit(onSubmit)}>
+            <Stack component="form" spacing={2} onSubmit={handleSubmit(onSubmit)} sx={{paddingTop: "100px"}}>
                 <Typography>
                     ステップ
                 </Typography>
