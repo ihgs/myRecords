@@ -3,7 +3,7 @@ import { Button, Stack, TextField, Typography } from '@mui/material'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { recordData } from '../libs/indexedDb'
 import Footer from './Footer'
-import { format } from 'date-fns'
+import { format, sub } from 'date-fns'
 
 export default function NewRecord() {
     const {
@@ -14,7 +14,7 @@ export default function NewRecord() {
         // formState: { errors },
     } = useForm<any>({
         defaultValues: {
-            at_date: format(new Date(), 'yyyy-MM-dd')
+            at_date: format(sub(new Date(), {hours: 9}), 'yyyy-MM-dd')
         }
     })
 
