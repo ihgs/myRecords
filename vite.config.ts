@@ -20,8 +20,8 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        "theme_color": "#f69435",
-        "background_color": "#f69435",
+        "theme_color": "#35ccf6",
+        "background_color": "#35ccf6",
         "display": "standalone",
         "scope": "https://ihgs.github.io/myRecords/",
         "start_url": ".",
