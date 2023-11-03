@@ -21,7 +21,7 @@ const recordData = async (recordKey: string, data: any) => {
 }
 
 const listData = async (recordKey: string) => {
-    return await db.type(recordKey).toArray()
+    return await db.type(recordKey).reverse().toArray()
 }
 
 export {
