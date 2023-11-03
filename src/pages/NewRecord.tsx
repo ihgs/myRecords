@@ -1,7 +1,7 @@
 import { Button, Stack, TextField, Typography } from '@mui/material'
 
 import { SubmitHandler, useForm } from 'react-hook-form'
-import { recordData } from '../libs/storage'
+import { recordData } from '../libs/indexedDb'
 import Footer from './Footer'
 import { format } from 'date-fns'
 
@@ -18,8 +18,8 @@ export default function NewRecord() {
         }
     })
 
-    const onSubmit: SubmitHandler<any> = (data) => {
-        recordData('step', data)
+    const onSubmit: SubmitHandler<any> = async (data) => {
+        await recordData('step', data)
         reset()
     }
     return (

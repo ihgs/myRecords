@@ -1,10 +1,10 @@
 import { useLoaderData } from "react-router-dom";
-import { listData } from "../libs/storage"
+import { listData } from "../libs/indexedDb"
 import Footer from "./Footer";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 
-export const listDataLoader = () => {
-    return listData('step');
+export const listDataLoader = async () => {
+    return await listData('step');
 }
 
 export default function ListData() {
@@ -26,10 +26,10 @@ export default function ListData() {
                     {data.map((datum, index) => {
                         return (
                             <TableRow hover key={index}>
-                                <TableCell>{datum.data.at_date}</TableCell>
-                                <TableCell>{datum.data.time}</TableCell>
-                                <TableCell>{datum.data.distance}</TableCell>
-                                <TableCell>{datum.data.calorie}</TableCell>
+                                <TableCell>{datum.at_date}</TableCell>
+                                <TableCell>{datum.time}</TableCell>
+                                <TableCell>{datum.distance}</TableCell>
+                                <TableCell>{datum.calorie}</TableCell>
                             </TableRow>
                         )
                     })}
