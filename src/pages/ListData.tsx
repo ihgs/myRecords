@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
 
 export const listDataLoader = async () => {
-    return await listData('step');
+    return await listData('steps');
 }
 
 export default function ListData() {

@@ -1,5 +1,5 @@
 import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material'
-import { Add, List, Settings} from '@mui/icons-material'
+import { Add, List, Settings, Timeline} from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
                 >
                     <BottomNavigationAction label="New" icon={<Add />} value="/" />
                     <BottomNavigationAction label="List" icon={<List />} value="/list" />
-                    <BottomNavigationAction label="Settings" icon={<Settings />} />
+                    <BottomNavigationAction label="Graph" icon={<Timeline />} value="/graph" />
                 </BottomNavigation>
             </Paper>
         </>
