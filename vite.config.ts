@@ -2,6 +2,8 @@ import {VitePWA} from 'vite-plugin-pwa'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const myColor = "#35ccf6"
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.GITHUB_PAGES
@@ -20,8 +22,8 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        "theme_color": "#35ccf6",
-        "background_color": "#35ccf6",
+        "theme_color": myColor,
+        "background_color": myColor,
         "display": "standalone",
         "scope": "https://ihgs.github.io/myRecords/",
         "start_url": ".",

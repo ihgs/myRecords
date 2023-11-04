@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { listData } from "../libs/indexedDb"
 import Footer from "./Footer";
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 
 export const listDataLoader = async () => {
     return await listData('steps');
@@ -11,7 +11,6 @@ export default function ListData() {
     const data = useLoaderData() as any[];
     return (
         <>
-            <Typography >Records</Typography>
             <TableContainer component={Paper}>
             <Table stickyHeader  aria-label="sticky table">
                 <TableHead>

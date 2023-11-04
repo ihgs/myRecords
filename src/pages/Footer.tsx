@@ -22,6 +22,7 @@ export default function Footer() {
                     <BottomNavigationAction label="New" icon={<Add />} value="/" />
                     <BottomNavigationAction label="List" icon={<List />} value="/list" />
                     <BottomNavigationAction label="Graph" icon={<Timeline />} value="/graph" />
+                    <BottomNavigationAction label="Settings" icon={<Settings />} value="/settings" />
                 </BottomNavigation>
             </Paper>
         </>
