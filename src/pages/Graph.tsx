@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import { db } from "../libs/db";
 import { Container, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 import * as vega from "vega";

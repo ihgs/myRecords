@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { listData } from "../libs/indexedDb"
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 
 export const listDataLoader = async () => {
