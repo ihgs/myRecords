@@ -101,7 +101,7 @@ export default function Graph() {
             <Select value={type} label={'表示'} onChange={handleChangeType} >
                 <MenuItem value={'distance'}>距離（km）</MenuItem>
                 <MenuItem value={'time'}>時間（分）</MenuItem>
-                <MenuItem value={'calorie'}>カロリー（kcal）</MenuItem>
+                <MenuItem value={'calorie'}>カロリー</MenuItem>
             </Select>
             </Container>
             <div id="view" style={{ width: "100vw" }} />

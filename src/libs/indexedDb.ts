@@ -16,11 +16,21 @@ const recordData = async (recordKey: string, data: any) => {
     )
 }
 
+const updateData = async (recordKey: string, data: any) => {
+    return await db.type(recordKey).update(data.id, data)
+}
+
 const listData = async (recordKey: string) => {
     return await db.type(recordKey).reverse().toArray()
 }
 
+const getData = async (recordKey: string, id: number) => {
+    return await db.type(recordKey).get(id)
+}
+
 export {
     recordData,
+    updateData,
     listData,
+    getData,
 } 

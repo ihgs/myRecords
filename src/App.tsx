@@ -4,10 +4,11 @@ import NewRecord from './pages/NewRecord'
 import ListData, { listDataLoader } from './pages/ListData'
 import Graph from './pages/Graph'
 import Settings from './pages/Settings'
+import EditRecord, { dataLoader } from './pages/EditRecord'
 
 import.meta.env.VITE_GITHUB_PAGES ? "/myRecords/" : "/"
 
-export const APP_VERSION = "1.0.0"
+export const APP_VERSION = "1.0.1"
 
 function App() {
   
@@ -21,6 +22,11 @@ function App() {
       path: `/list`,
       loader: listDataLoader,
       element: <ListData />
+    },
+    {
+      path: `/edit/:id`,
+      loader: dataLoader,
+      element: <EditRecord />
     },
     {
       path: `/graph`,

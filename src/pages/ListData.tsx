@@ -22,9 +22,9 @@ export default function ListData() {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {data.map((datum, index) => {
+                    {data.map((datum) => {
                         return (
-                            <TableRow hover key={index}>
+                            <TableRow hover key={datum.id}>
                                 <TableCell>{datum.at_date}</TableCell>
                                 <TableCell>{datum.time}</TableCell>
                                 <TableCell>{datum.distance}</TableCell>
