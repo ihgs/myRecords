@@ -8,7 +8,7 @@ import EditRecord, { dataLoader } from './pages/EditRecord'
 
 import.meta.env.VITE_GITHUB_PAGES ? "/myRecords/" : "/"
 
-export const APP_VERSION = "1.0.1"
+export const APP_VERSION = "1.0.2"
 
 function App() {
   
