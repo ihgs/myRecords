@@ -11,7 +11,7 @@ export default function ListData() {
     const data = useLoaderData() as any[];
     return (
         <>
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{maxHeight: "100vh"}}>
             <Table stickyHeader  aria-label="sticky table">
                 <TableHead>
                     <TableRow>
