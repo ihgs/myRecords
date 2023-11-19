@@ -15,7 +15,7 @@ export default function EditRecord() {
     return (
         <>
             <StepForm current={data} />
-            <Footer />
+            <Footer mode="step"/>
         </>
     )
 

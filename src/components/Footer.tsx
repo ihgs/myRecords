@@ -1,5 +1,5 @@
 import { BottomNavigation, BottomNavigationAction, Divider, Paper } from '@mui/material'
-import { Add, List, LocalDining, Settings, Timeline} from '@mui/icons-material'
+import { Add, List, LocalDining, Timeline} from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
