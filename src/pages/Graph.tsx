@@ -51,10 +51,10 @@ export default function Graph() {
                     config: {
                         axis: {
                             title: null,
-
                         }
                     }
                 }).spec
+                console.log(vegaspec)
                 const view = new vega.View(vega.parse(vegaspec), {
                     renderer: 'svg',
                     container: '#view',
@@ -105,7 +105,7 @@ export default function Graph() {
             </Select>
             </Container>
             <div id="view" style={{ width: "100vw" }} />
-            <Footer />
+            <Footer mode="step" />
         </>
     )
 }

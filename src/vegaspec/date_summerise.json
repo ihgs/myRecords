@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "autosize": {
+    "contains": "padding",
+    "type": "fit-x"
+  },
+  "height": 300,
+  "signals": [
+    {
+      "name": "width",
+      "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 200",
+      "on": [
+        {
+          "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 200",
+          "events": "window:resize"
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "name": "table",
+      "format": {"type": "json"},
+      "values": [{} ],
+      "transform": [
+        {
+          "type": "formula",
+          "as": "at_date",
+          "expr": "datetime(datum.at_time)"
+        },
+        {
+          "type": "formula",
+          "as": "hm",
+          "expr": "datetime(1,1,1,hours(datum.at_date),minutes(datum.at_date),0,0)"
+        },
+        {
+          "type": "formula",
+          "as": "day",
+          "expr": "date(datum.at_date)"
+        }
+      ]
+
+    }
+  ],
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "time",
+      "domain": {"data": "table", "field": "hm"},
+      "range": "width",
+      "nice": "day",
+      "round": true
+    },
+    {
+      "name": "yscale",
+      "domain": [1,31],
+      "range": "height",
+      "domainMin": 1,
+      "reverse": true
+    },
+    {
+      "name": "color",
+      "domain": ["0", "1", "2"],
+      "range": ["orange", "brown", "blue"]
+    },
+    {
+      "name": "shape",
+      "type": "ordinal",
+      "domain": ["0", "1", "2"],
+      "range": ["circle", "square", "triangle"]
+    }
+  ],
+  "axes": [
+    { "orient": "bottom", "scale": "xscale", "format" : "%H", "grid": true, "tickCount":24},
+    { "orient": "left", "scale": "yscale", "ticks": true, "grid": true, "tickCount": 31 }
+  ],
+  "marks": [
+    {
+      "name": "layer_0",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data":"table"},
+      "encode": {
+        "update": {
+          "x": {"scale": "xscale", "field": "hm"},
+          "y": {"scale": "yscale", "field": "day"},
+          "fill": {"scale": "color", "field": "type"},
+          "size": {"value": 80},
+          "shape": {"scale": "shape", "field": "type"}
+        }
+      }
+    }
+  ]
+}

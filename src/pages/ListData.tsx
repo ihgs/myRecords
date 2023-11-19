@@ -36,7 +36,7 @@ export default function ListData() {
 
             </Table>
             </TableContainer>
-            <Footer />
+            <Footer mode="step"/>
         </>
     )
 }

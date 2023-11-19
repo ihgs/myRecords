@@ -13,7 +13,7 @@ export default function Settings() {
                     {APP_VERSION}
                 </ListItem>
             </List>
-            <Footer />
+            <Footer mode="hungry" />
         </>
 
     )
