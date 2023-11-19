@@ -17,6 +17,8 @@ export enum HungryType{
     Meal = 1,
     Snack = 2,
 }
+export const HungryMap = ["お腹すいた","ご飯食べた", "間食食べた"]
+
 export interface Hungry {
     id?: number
     at_time: number

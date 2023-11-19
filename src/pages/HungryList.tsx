@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import { format } from 'date-fns'
 import { useLoaderData } from "react-router-dom";
+import { HungryMap } from "../libs/db";
 
 export const listDataLoader = async () => {
     return await listData('hugries');
@@ -27,7 +28,7 @@ export default function HungryList() {
                             return (
                                 <TableRow hover key={datum.id}>
                                     <TableCell>{format(new Date(datum.at_time), 'yyyy/MM/dd HH:mm')}</TableCell>
-                                    <TableCell>{datum.type}</TableCell>
+                                    <TableCell>{HungryMap[datum.type]}</TableCell>
                                 </TableRow>
                             )
                         })}
