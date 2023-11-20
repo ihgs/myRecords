@@ -11,7 +11,7 @@ import HungryList, {listDataLoader as hugryListDataLoader} from './pages/HungryL
 
 import.meta.env.VITE_GITHUB_PAGES ? "/myRecords/" : "/"
 
-export const APP_VERSION = "1.0.4"
+export const APP_VERSION = "1.0.5"
 
 function App() {
   
