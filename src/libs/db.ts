@@ -25,6 +25,7 @@ export interface Hungry {
     type: HungryType
 }
 
+export type recordKey = 'steps' | 'hugries'
 export class MyRecordDexie extends Dexie {
     steps!: Table<Step>;
     hugries!: Table<Hungry>;
@@ -37,7 +38,7 @@ export class MyRecordDexie extends Dexie {
         })
     }
 
-    type (recordKey:string) : Table<any> {
+    type (recordKey:recordKey) : Table<any> {
         if(recordKey == 'steps') {
             return this.steps;
         } else if (recordKey == 'hugries') {

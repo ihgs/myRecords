@@ -24,9 +24,9 @@ export default function StepForm({current}: {current?: Step}) {
 
     const onSubmit: SubmitHandler<any> = async (data) => {
         if(current){
-            await updateData('step', data)
+            await updateData('steps', data)
         } else {
-            await recordData('step', data)
+            await recordData('steps', data)
             reset()
         }
 
