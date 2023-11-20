@@ -28,9 +28,14 @@ const getData = async (recordKey: string, id: number) => {
     return await db.type(recordKey).get(id)
 }
 
+const deleteData = async (recordKey: string, id: number) => {
+    return await db.type(recordKey).delete(id);
+}
+
 export {
     recordData,
     updateData,
     listData,
     getData,
+    deleteData,
 } 
